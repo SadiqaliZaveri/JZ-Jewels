@@ -27,6 +27,7 @@
 		"@koa/cors": "^3.0.0",
 		"@next/bundle-analyzer": "^9.1.1",
 		"@zeit/next-css": "^1.0.1",
+		"dayjs": "^1.8.21",
 		"isomorphic-unfetch": "^3.0.0",
 		"koa": "^2.10.0",
 		"koa-router": "^7.4.0",
