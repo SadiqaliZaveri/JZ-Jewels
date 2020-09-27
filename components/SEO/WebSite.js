@@ -2,7 +2,7 @@ const dataObject = {
 	'@context': 'http://schema.org',
 	'@type': 'WebSite',
 	name: 'Zavtin',
-	url: 'https://craftedjewellers.in/',
+	url: 'https://zavtin.com/',
 }
 
 const WebSite = () => (

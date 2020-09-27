@@ -5,9 +5,9 @@ const dataObject = {
 	provider: {
 		'@type': 'LocalBusiness',
 		name: 'Zavtin',
-		image: 'https://craftedjewellers.in/images/icons/zavtin-horizontal.png',
+		image: 'https://zavtin.com/images/icons/zavtin-horizontal.png',
 		telephone: '+919930757552',
-		email: 'support@craftedjewellers.in',
+		email: 'support@zavtin.com',
 		priceRange: '$$$',
 		address: {
 			'@type': 'PostalAddress',

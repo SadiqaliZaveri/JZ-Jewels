@@ -152,10 +152,10 @@ const Footer = () => {
 							</InfoAnchorContainer>
 							<InfoAnchorContainer>
 								<InfoAnchor
-									title="Send mail to support@craftedjewellers.in"
-									href="mailto: support@craftedjewellers.in"
+									title="Send mail to support@zavtin.com"
+									href="mailto: support@zavtin.com"
 								>
-									support@craftedjewellers.in
+									support@zavtin.com
 								</InfoAnchor>
 							</InfoAnchorContainer>
 						</InfoContainer>

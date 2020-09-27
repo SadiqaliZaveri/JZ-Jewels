@@ -12,6 +12,7 @@ try {
 			dbName,
 			user,
 			pass: userPassword,
+			authSource: dbName,
 		})
 		.catch(error => console.error.bind(console, error))
 
