@@ -50,13 +50,10 @@ class MyDocument extends Document {
 					/>
 					<meta property="og:title" content={websiteTitle} />
 					<meta property="og:type" content="webite" />
-					<meta
-						property="og:url"
-						content="https://craftedjewellers.in/"
-					/>
+					<meta property="og:url" content="https://zavtin.com/" />
 					<meta
 						property="og:image"
-						content="https://craftedjewellers.in/images/icons/zavtin-192.png"
+						content="https://zavtin.com/images/icons/zavtin-192.png"
 					/>
 					<meta
 						property="og:description"

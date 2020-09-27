@@ -2,9 +2,9 @@ const dataObject = {
 	'@context': 'http://schema.org',
 	'@type': 'LocalBusiness',
 	name: 'Zavtin',
-	image: 'https://craftedjewellers.in/images/icons/zavtin-horizontal.png',
+	image: 'https://zavtin.com/images/icons/zavtin-horizontal.png',
 	telephone: '+919930757552',
-	email: 'support@craftedjewellers.in',
+	email: 'support@zavtin.com',
 	priceRange: '$$$',
 	address: {
 		'@type': 'PostalAddress',
@@ -14,7 +14,7 @@ const dataObject = {
 		addressCountry: 'India',
 		postalCode: '400049',
 	},
-	url: 'https://craftedjewellers.in/',
+	url: 'https://zavtin.com/',
 }
 
 const LocalBusiness = () => (

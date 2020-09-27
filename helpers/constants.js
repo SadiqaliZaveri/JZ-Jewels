@@ -1,5 +1,5 @@
 export const GTMID = 'UA-156560018-1'
-export const CDN = 'https://cdn.craftedjewellers.in/'
+export const CDN = 'https://cdn.zavtin.com/'
 
 export const websiteTitle = 'Zavtin - Jewellery Services'
 export const websiteDescription =

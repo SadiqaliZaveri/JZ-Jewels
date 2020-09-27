@@ -16,7 +16,7 @@ const terms = () => (
 
 		<p>
 			These terms and conditions outline the rules and regulations for the
-			use of Zavtin's Website, located at craftedjewellers.in.
+			use of Zavtin's Website, located at zavtin.com.
 		</p>
 
 		<p>
