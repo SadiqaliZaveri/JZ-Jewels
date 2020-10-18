@@ -1,10 +1,8 @@
 import App from 'next/app'
-import { Provider } from 'react-redux'
-import withRedux from 'next-redux-wrapper'
 import { ThemeProvider } from 'styled-components'
 import Router from 'next/router'
-
-import configureStore from '../store'
+import Head from 'next/head'
+import nextReduxWrapper from '../store'
 import theme from '../themes'
 
 import 'normalize.css'
@@ -16,15 +14,21 @@ Router.events.on('routeChangeComplete', () => TrackPageView())
 
 class CraftedJewellers extends App {
 	render() {
-		const { Component, pageProps, store } = this.props
+		const { Component, pageProps } = this.props
 		return (
-			<Provider store={store}>
+			<React.Fragment>
+				<Head>
+					<meta
+						name="viewport"
+						content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui"
+					/>
+				</Head>
 				<ThemeProvider theme={theme}>
 					<Component {...pageProps} />
 				</ThemeProvider>
-			</Provider>
+			</React.Fragment>
 		)
 	}
 }
 
-export default withRedux(configureStore)(CraftedJewellers)
+export default nextReduxWrapper.withRedux(CraftedJewellers)

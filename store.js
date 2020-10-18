@@ -1,5 +1,6 @@
 import { applyMiddleware, createStore, compose } from 'redux'
 import thunkMiddleware from 'redux-thunk'
+import { createWrapper } from 'next-redux-wrapper'
 
 import loggerMiddleware from './middlewares/logger'
 import rootReducer from './reducers'
@@ -12,7 +13,7 @@ const useDevToolsComposer = () => {
 	)
 }
 
-export default function configureStore(preloadedState) {
+const configureStore = () => {
 	const middlewares = [loggerMiddleware, thunkMiddleware]
 	const middlewareEnhancer = applyMiddleware(...middlewares)
 
@@ -22,7 +23,12 @@ export default function configureStore(preloadedState) {
 		? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__(...enhancers) //eslint-disable-line
 		: compose(...enhancers)
 
-	const store = createStore(rootReducer, preloadedState, composedEnhancers)
+	const store = () => createStore(rootReducer, composedEnhancers)
+	const nextReduxWrapper = createWrapper(store, { debug: false })
 
-	return store
+	return nextReduxWrapper
 }
+
+const nextReduxWrapper = configureStore()
+
+export default nextReduxWrapper
