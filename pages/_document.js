@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Main, Head, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 import { registerServiceWorker } from '../helpers/utils'
 import { websiteDescription, websiteTitle } from '../helpers/constants'
@@ -43,11 +43,7 @@ class MyDocument extends Document {
 			<Html lang="en">
 				<Head>
 					<meta name="theme-color" content="#cccccc" />
-					<meta name="Description" content={websiteDescription} />
-					<meta
-						name="viewport"
-						content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui"
-					/>
+					<meta name="description" content={websiteDescription} />
 					<meta property="og:title" content={websiteTitle} />
 					<meta property="og:type" content="webite" />
 					<meta property="og:url" content="https://zavtin.com/" />

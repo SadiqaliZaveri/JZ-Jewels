@@ -55,3 +55,7 @@
 -   Add website schema
 -   Add service schema
 -   Add Google analytics and page view tracking
+
+# 1.0.4
+
+-   Update all used libraries to their latest version

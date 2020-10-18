@@ -1,4 +1,4 @@
-const Router = require('koa-router')
+const Router = require('@koa/router')
 const { performDBCall } = require('../../controllers/basic')
 
 const router = new Router({

@@ -1,6 +1,6 @@
 const Koa = require('koa')
 const zeitNext = require('next')
-const Router = require('koa-router')
+const Router = require('@koa/router')
 const cors = require('@koa/cors')
 const http2 = require('http2')
 const fs = require('fs')
@@ -33,7 +33,7 @@ app.prepare().then(() => {
 	const router = new Router()
 
 	// Disable koa route handling as app will handle them
-	router.get('*', async ctx => {
+	router.get('(.*)', async ctx => {
 		await handle(ctx.req, ctx.res)
 		ctx.respond = false
 	})
