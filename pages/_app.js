@@ -10,7 +10,11 @@ import '../public/css/common.css'
 import 'lazysizes'
 import { TrackPageView } from '../helpers/analytics'
 
-Router.events.on('routeChangeComplete', () => TrackPageView())
+Router.events.on('routeChangeComplete', () => {
+	TrackPageView()
+	// eslint-disable-next-line no-undef
+	document.getElementById('__next').scrollTop = 0
+})
 
 class CraftedJewellers extends App {
 	render() {
