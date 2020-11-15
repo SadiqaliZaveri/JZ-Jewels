@@ -5,7 +5,6 @@ const theme = {
 	lightGray: '#F2F2F2',
 	textBlack: '#272727',
 	activeText: '#BC9358',
-	utility: '#1f2456',
 }
 
 const dimensions = {
