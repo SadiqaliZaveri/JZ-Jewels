@@ -14,12 +14,10 @@ const HeaderWrapper = styled.div`
 	background-color: ${props => props.theme.white};
 	align-items: center;
 	padding: 8px 16px;
-	box-shadow: 0 0px 8px 0px ${props => props.theme.utility};
+	box-shadow: 0 0px 8px 0px ${props => props.theme.boxShadow};
 	justify-content: center;
 	z-index: ${props => props.theme.headerZ};
 	user-select: none;
-	border-bottom-left-radius: 40px;
-	border-bottom-right-radius: 40px;
 `
 const HeaderContainer = styled.div`
 	display: flex;
