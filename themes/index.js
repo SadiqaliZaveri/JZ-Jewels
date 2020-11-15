@@ -1,14 +1,23 @@
 const theme = {
+	black: '#000000',
 	white: '#FFFFFF',
 	gray: '#CCCCCC',
 	lightGray: '#F2F2F2',
 	textBlack: '#272727',
 	activeText: '#BC9358',
-	utility: '#B2B2B2',
+	utility: '#1f2456',
 }
 
 const dimensions = {
 	wrapperMaxWidth: '1920px',
+}
+
+const utilities = {
+	border: '#1F2456',
+	boxShadow: '#B2B2B2',
+	overlay: '#B2B2B2',
+	linkHover: '#1F2456',
+	link: '#3482c9',
 }
 
 const zIndexes = {
@@ -44,4 +53,5 @@ export default {
 	...dimensions,
 	...zIndexes,
 	...device,
+	...utilities,
 }
