@@ -1,5 +1,6 @@
 import ImageGallery from 'react-image-gallery'
 import styled from 'styled-components'
+import { string } from 'prop-types'
 import 'react-image-gallery/styles/css/image-gallery.css'
 import itemData from '../../../data/item.json'
 import GalleryArrow from '../GalleryArrow'
@@ -54,7 +55,7 @@ const GalleryItemWrapper = styled.div`
 	}
 `
 
-const GalleryItem = (item) => (
+const GalleryItem = ({ item }) => (
 	<GalleryItemWrapper>
 		{
 			itemData.[item] ?
@@ -73,5 +74,9 @@ const GalleryItem = (item) => (
 		}
 	</GalleryItemWrapper>
 )
+
+GalleryItem.propTypes = {
+	item: string.isRequired
+}
 
 export default GalleryItem
