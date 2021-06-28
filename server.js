@@ -15,7 +15,7 @@ const app = zeitNext({ dir: '.', dev })
 const handle = app.getRequestHandler()
 const API = require('./routes/api')
 
-require('./backend/mongoConnection')
+// require('./backend/mongoConnection')
 
 const applicationServerLog = () => {
 	console.log(
