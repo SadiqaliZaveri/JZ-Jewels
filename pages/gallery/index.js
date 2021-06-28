@@ -8,8 +8,8 @@ import {
 	CategoryItems,
 	CardImgWrapper,
 	CardImg
-} from './style'
-import galleryData from './gallery.json'
+} from '../../styles/gallery/style'
+import galleryData from '../../data/gallery.json'
 
 const Index = () => (
 	<GalleryWrapper>
