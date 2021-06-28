@@ -66,7 +66,7 @@ const terms = () => (
 
 		<p>
 			Unless otherwise stated, Zavtin and/or its licensors own the
-			intellectual property rights for all material on Crafted Jewellers.
+			intellectual property rights for all material on Zavtin.
 			All intellectual property rights are reserved. You may access this
 			from Zavtin for your own personal use subjected to restrictions set
 			in these terms and conditions.
@@ -183,8 +183,8 @@ const terms = () => (
 			that: (a) the link would not make us look unfavorably to ourselves
 			or to our accredited businesses (b) the organization does not have
 			any negative records with us (c) the benefit to us from the
-			visibility of the hyperlink compensates the absence of Crafted
-			Jewellers and (d) the link is in the context of general resource
+			visibility of the hyperlink compensates the absence of Zavtin
+			and (d) the link is in the context of general resource
 			information.
 		</p>
 
