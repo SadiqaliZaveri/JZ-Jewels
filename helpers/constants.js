@@ -1,5 +1,5 @@
 export const GTMID = 'UA-156560018-1'
-export const CDN = 'https://cdn.zavtin.com/'
+export const CDN = 'https://cdn.zavtin.com'
 
 export const websiteTitle = 'Zavtin - Jewellery Services'
 export const websiteDescription =
@@ -7,6 +7,7 @@ export const websiteDescription =
 
 export const genericErrorMsg = 'Something went wrong. Please try again later.'
 export const genericNoData = 'No results found. Please comeback later.'
+export const genericNotFound = 'Item does not exist.'
 
 export const sidebarTimeout = 5000
 

@@ -88,3 +88,23 @@ workbox.routing.registerRoute(
 		],
 	})
 )
+
+workbox.routing.registerRoute(
+	// Cache image files.
+	/https:\/\/cdn\.zavtin\.com/,
+	// Use the cache if it's available.
+	new workbox.strategies.CacheFirst({
+		// Use a custom cache name.
+		cacheName: 'cdn-cache',
+		plugins: [
+			new workbox.expiration.Plugin({
+				// Cache only 60 images.
+				maxEntries: 60,
+				// Cache for a maximum of 7 days.
+				maxAgeSeconds: 7 * 24 * 60 * 60,
+				// Purge on Quota error
+				purgeOnQuotaError: true,
+			}),
+		],
+	})
+)

@@ -108,7 +108,7 @@ const Index = () => {
 			<Row>
 				<VideoCard boxshadow>
 					<CardVideo
-						src={`${CDN}videos/engagement-rings-nb.mp4`}
+						src={`${CDN}/videos/engagement-rings-nb.mp4`}
 						autoPlay
 						muted
 						loop
