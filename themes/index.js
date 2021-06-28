@@ -24,6 +24,8 @@ const zIndexes = {
 	overlayZ: 99,
 	backgroundVideoZ: 97,
 	elementsAboveVideoZ: 98,
+	aboveItem: 96,
+	belowItem: 95
 }
 
 const size = {
