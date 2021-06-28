@@ -1,26 +1,58 @@
 {
-	"parser": "babel-eslint",
-	"extends": ["airbnb", "eslint:recommended", "prettier"],
-	"plugins": ["react"],
-	"rules": {
-		"semi": ["error", "never"],
-		"quotes": ["error", "single"],
-		"react/jsx-props-no-spreading": [
-			2,
-			{
-				"custom": "ignore"
-			}
-		],
-		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-		"react/jsx-indent": [2, "tab", { "indentLogicalExpressions": true }],
-		"react/jsx-indent-props": [2, "tab"],
-		"react/jsx-fragments": [2, "element"],
-		"react/no-unescaped-entities": 0,
-		"react/no-danger": 0,
-		"react/react-in-jsx-scope": 0,
-		"react/jsx-no-undef": 0,
-		"require-atomic-updates": 0,
-		"no-console": 0,
-		"react/jsx-one-expression-per-line": 0
-	}
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "semi": [
+      "error",
+      "never"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "react/jsx-props-no-spreading": [
+      2,
+      {
+        "custom": "ignore"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/jsx-indent": [
+      2,
+      "tab",
+      {
+        "indentLogicalExpressions": true
+      }
+    ],
+    "react/jsx-indent-props": [
+      2,
+      "tab"
+    ],
+    "react/jsx-fragments": [
+      2,
+      "element"
+    ],
+    "react/no-unescaped-entities": 0,
+    "react/no-danger": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-no-undef": 0,
+    "require-atomic-updates": 0,
+    "no-console": 0,
+    "react/jsx-one-expression-per-line": 0
+  }
 }
