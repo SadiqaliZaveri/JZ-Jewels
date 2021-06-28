@@ -82,9 +82,12 @@ const Header = () => {
 						<Link href="/" prefetch={false}>
 							<MenuItem>Home</MenuItem>
 						</Link>
-						<MenuItem onClick={() => setActiveMenu(!activeMenu)}>
+						{/* <MenuItem onClick={() => setActiveMenu(!activeMenu)}>
 							Products
-						</MenuItem>
+						</MenuItem> */}
+						<Link href="/gallery" prefetch={false}>
+							<MenuItem>Gallery</MenuItem>
+						</Link>
 					</MenuWrapper>
 					<CSSTransition
 						in={activeMenu}
