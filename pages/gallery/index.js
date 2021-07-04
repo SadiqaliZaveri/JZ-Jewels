@@ -1,6 +1,7 @@
 import Link from 'next/link'
+import Head from 'next/head'
 import withLayout from '../../components/Layout'
-import { CDN } from '../../helpers/constants'
+import { CDN, galleryTitle, galleryDescription } from '../../helpers/constants'
 import {
 	GalleryWrapper,
 	CategoryWrapper,
@@ -13,6 +14,10 @@ import galleryData from '../../data/gallery.json'
 
 const Index = () => (
 	<GalleryWrapper>
+		<Head>
+			<title key="title">{galleryTitle}</title>
+			<meta name="description" content={galleryDescription} />
+		</Head>
 		{
 			Object.keys(galleryData).map(key => (
 				<CategoryWrapper key={key}>
