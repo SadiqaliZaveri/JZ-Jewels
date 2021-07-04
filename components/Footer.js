@@ -29,8 +29,9 @@ const LogoWrapper = styled.div`
 	justify-content: center;
 `
 const Logo = styled.img`
-	width: 140px;
+	height: 58px;
 	cursor: pointer;
+	object-fit: contain;
 `
 const SectionWrapper = styled.section`
 	display: flex;

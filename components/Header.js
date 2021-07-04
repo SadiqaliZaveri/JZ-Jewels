@@ -28,18 +28,20 @@ const HeaderContainer = styled.div`
 `
 const LogoWrapper = styled.div`
 	display: flex;
-	height: 44px;
-	max-width: 210px;
-	@media ${props => props.theme.mobileL} {
-		height: 60px;
-		max-width: 100px;
-	}
+	justify-content: center;
+	align-items: center;
 `
-const LogoPicture = styled.picture``
+const LogoPicture = styled.picture`
+	display: flex;
+`
 
 const LogoImg = styled.img`
 	cursor: pointer;
-	height: 100%;
+	object-fit: contain;
+	height: 58px;
+	@media ${props => props.theme.mobileL} {
+		height: 44px;
+	}
 `
 
 const MenuWrapper = styled.div`
